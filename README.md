@@ -1,31 +1,31 @@
-# Sistema de Gestión - S.A. Veracruz
+# VeracruzQuality
 
-Sistema por consola en C para el control de calidad y trazabilidad de lotes de jugo concentrado y aceite esencial. Proyecto desarrollado como Trabajo Final Integrador (TFI).
+Citrus quality control and batch tracking in C. Final Algorithms project with S.A. Veracruz.
 
-## Características
+## Features
 
-- **Autenticación:** inicio de sesión y registro de usuarios con validaciones de credenciales (almacenado en `Usuarios.dat`).
-- **Gestión de lotes (CRUD):** alta, baja lógica, baja física (purga), modificación y consulta de análisis de calidad (pH, acidez, inocuidad y estado del lote).
-- **Estructuras en memoria:** ordenamiento y visualización de registros mediante listas enlazadas dinámicas en RAM.
-- **Interfaz por consola:** menús navegables con teclado y ajuste dinámico al tamaño de ventana mediante Windows API.
+- **Authentication:** user registration and login with credential checks (`Usuarios.dat`).
+- **Batch Management (CRUD):** create, soft delete, hard delete (purge), update, and query quality tests (pH, acidity, food safety, and batch status).
+- **In-Memory Structures:** sorting and risk management using dynamic linked lists in RAM.
+- **Terminal UI:** keyboard-driven menus and dynamic console resizing via Windows API.
 
-## Compilación y ejecución
+## Build & Run
 
-Requiere un compilador de C (como GCC / MinGW) en Windows:
+Requires a C compiler (GCC / MinGW) on Windows:
 
 ```bash
 gcc VeracruzQuality.c -o VeracruzQuality.exe
 .\VeracruzQuality.exe
 ```
 
-## Controles
+## Controls
 
-- `↑` / `↓`: navegar por las opciones
-- `Enter`: seleccionar
-- `ESC`: volver / cancelar
+- `↑` / `↓`: navigate options
+- `Enter`: select
+- `ESC`: back / exit
 
-## Archivos
+## Files
 
-- `VeracruzQuality.c`: código fuente principal.
-- `Usuarios.dat`: base de datos binaria de usuarios.
-- `Analisis.dat`: base de datos binaria de análisis de lotes.
+- `VeracruzQuality.c`: main source code.
+- `Usuarios.dat`: binary storage for users.
+- `Analisis.dat`: binary storage for batch quality records.
